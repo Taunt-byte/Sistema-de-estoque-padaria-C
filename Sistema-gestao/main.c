@@ -53,11 +53,9 @@ int main(int escolha)
     printf("\n Para ver o menu da padaria digite um(1) para ver o menu do açougue(2)\n");
     scanf("%d",escolha);
     if(escolha==1){
+            printf("deus me ajuda");
         padaria();
-    }else{
-        acougue();
     }
-    acougue();
 
     return 0;
 }
