@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1654388277 source:d:\projetos\sistema-de-gestao\sistema-gestao\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+
