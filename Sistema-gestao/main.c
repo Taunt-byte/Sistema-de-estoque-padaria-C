@@ -11,7 +11,7 @@ Sistema de mercearia utilizando:
 stings
 vetores
 struct
-repetiçoes
+repetiï¿½oes
 matriz
 
 */
@@ -32,16 +32,15 @@ void padaria(void){
     printf("Pao de queijo (unidade) == 1,00 RS \n");
     printf("Bolo de cenoura (unidade) == 2,30 RS \n");
     printf("Bolo de chocolate (unidade) == 2,20 RS \n");
-
+    printf("Queijo de mussarela (100g) == 0,50 RS \n");
+    printf("Queijo mineiro (100g) == 0,70 RS \n");
+    printf("Mortadela (100g) == 0,90 RS \n");
+    printf("Peito de peru (500g) == 2,30 RS \n");
     return;
 }
 
 void acougue(void){
     printf("====Menu da frio==== \n");
-    printf("Queijo de mussarela (100g) == 0,50 RS \n");
-    printf("Queijo mineiro (100g) == 0,70 RS \n");
-    printf("Mortadela (100g) == 0,90 RS \n");
-    printf("Peito de peru (500g) == 2,30 RS \n");
     printf("Carne muito boa (500g) == 2,20 RS \n");
 
     return;
@@ -50,14 +49,24 @@ void acougue(void){
 int main(int escolha)
 {
     impri_cabec();
-    printf("\n Para ver o menu da padaria digite um(1) para ver o menu do açougue(2)\n");
+    printf("Escolha o menu que deseja acessar\n");
+    printf("Digite um para acessar o menu da area da padaria");
+    printf("Digite dois para acessar o menu da area de carnes");
     scanf("%d",escolha);
-    if(escolha==1){
-        padaria();
-    }else{
-        acougue();
-    }
-    acougue();
+    switch (escolha)
+{
+   case 1:
+     padaria();
+   break;
+
+   case 2:
+     acougue();
+   break;
+
+   default:
+     printf("Esse numero e invalido");
+    break;
+}
 
     return 0;
 }
